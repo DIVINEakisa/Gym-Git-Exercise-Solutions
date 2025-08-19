@@ -29,15 +29,6 @@ No commits yet
 Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
         new file:   index.html
-PS C:\Users\USER\OneDrive\Documents\myProject> git branch -m master main
-PS C:\Users\USER\OneDrive\Documents\myProject> git status
-On branch main
-
-No commits yet
-
-Changes to be committed:
-  (use "git rm --cached <file>..." to unstage)
-        new file:   index.html
 
 PS C:\Users\USER\OneDrive\Documents\myProject> git branch
 * master
