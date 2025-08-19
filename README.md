@@ -44,7 +44,7 @@ PS C:\Users\USER\OneDrive\Documents\myProject> git remote add origin https://git
 PS C:\Users\USER\OneDrive\Documents\myProject> git remote -v
 origin  https://github.com/DIVINEakisa/Bundle1--Exercises1.git (fetch)
 origin  https://github.com/DIVINEakisa/Bundle1--Exercises1.git (push)
-PS C:\Users\USER\OneDrive\Documents\myProject> git push origin master
+PS C:\Users\USER\OneDrive\Documents\myProject> git push origin main
 Enumerating objects: 3, done.
 Counting objects: 100% (3/3), done.
 Delta compression using up to 16 threads
@@ -56,7 +56,7 @@ remote: Create a pull request for 'master' on GitHub by visiting:
 remote:      https://github.com/DIVINEakisa/Bundle1--Exercises1/pull/new/master
 remote:
 To https://github.com/DIVINEakisa/Bundle1--Exercises1.git
- * [new branch]      master -> master
+ * [new branch]      main -> main
 
 
 PS C:\Users\USER\OneDrive\Documents\myProject> git checkout -b dev
