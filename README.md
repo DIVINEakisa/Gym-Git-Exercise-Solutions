@@ -4,9 +4,9 @@
 
 ### Exercise 1
 
-```bash/terminal
-PS C:\Users\USER\OneDrive\Documents\Gym-Git-Exercise-Solutions> cd..
-PS C:\Users\USER\OneDrive\Documents> mkdir myProject
+```bash
+PS C:\Users\USER\OneDrive\Documents\Gym-Git-Exercise-Solutions> cd ..
+PS C:\Users\USER\OneDrive\Documents> mkdir project
 
 
     Directory: C:\Users\USER\OneDrive\Documents
@@ -14,14 +14,14 @@ PS C:\Users\USER\OneDrive\Documents> mkdir myProject
 
 Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
-d-----         8/18/2025   6:32 PM                myProject
+d-----         8/19/2025   6:39 PM                project
 
 
-PS C:\Users\USER\OneDrive\Documents> cd .\myProject\
-PS C:\Users\USER\OneDrive\Documents\myProject> git init
-Initialized empty Git repository in C:/Users/USER/OneDrive/Documents/myProject/.git/
-PS C:\Users\USER\OneDrive\Documents\myProject> git add .
-PS C:\Users\USER\OneDrive\Documents\myProject> git status
+PS C:\Users\USER\OneDrive\Documents> cd project
+PS C:\Users\USER\OneDrive\Documents\project> git init
+Initialized empty Git repository in C:/Users/USER/OneDrive/Documents/project/.git/
+PS C:\Users\USER\OneDrive\Documents\project> git add .
+PS C:\Users\USER\OneDrive\Documents\project> git status
 On branch master
 
 No commits yet
@@ -29,47 +29,55 @@ No commits yet
 Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
         new file:   index.html
+PS C:\Users\USER\OneDrive\Documents\project> git branch -m master main
+PS C:\Users\USER\OneDrive\Documents\project> git status
+On branch main
 
-PS C:\Users\USER\OneDrive\Documents\myProject> git branch
-* master
-PS C:\Users\USER\OneDrive\Documents\myProject> git branch -m  master main
-PS C:\Users\USER\OneDrive\Documents\myProject> git branch
-* main
+No commits yet
 
-PS C:\Users\USER\OneDrive\Documents\myProject> git commit -a -m "First Changes"
-[master (root-commit) 7666d6e] First Changes
- 1 file changed, 11 insertions(+)
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+PS C:\Users\USER\OneDrive\Documents\project> git commit -a -m "New Changes"
+[main (root-commit) 412c846] New Changes
+ 1 file changed, 20 insertions(+)
  create mode 100644 index.html
-PS C:\Users\USER\OneDrive\Documents\myProject> git remote add origin https://github.com/DIVINEakisa/Bundle1--Exercises1.git
-PS C:\Users\USER\OneDrive\Documents\myProject> git remote -v
+PS C:\Users\USER\OneDrive\Documents\project> git remote add origin https://github.com/DIVINEakisa/Bundle1--Exercises1.git
+PS C:\Users\USER\OneDrive\Documents\project> git remote -v
 origin  https://github.com/DIVINEakisa/Bundle1--Exercises1.git (fetch)
 origin  https://github.com/DIVINEakisa/Bundle1--Exercises1.git (push)
-PS C:\Users\USER\OneDrive\Documents\myProject> git push origin main
+PS C:\Users\USER\OneDrive\Documents\project> git push origin main
 Enumerating objects: 3, done.
 Counting objects: 100% (3/3), done.
 Delta compression using up to 16 threads
 Compressing objects: 100% (2/2), done.
-Writing objects: 100% (3/3), 396 bytes | 198.00 KiB/s, done.
+Writing objects: 100% (3/3), 521 bytes | 521.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
-remote:
-remote: Create a pull request for 'master' on GitHub by visiting:
-remote:      https://github.com/DIVINEakisa/Bundle1--Exercises1/pull/new/master
-remote:
+
 To https://github.com/DIVINEakisa/Bundle1--Exercises1.git
  * [new branch]      main -> main
-
-
-PS C:\Users\USER\OneDrive\Documents\myProject> git checkout -b dev
+PS C:\Users\USER\OneDrive\Documents\project> git checkout -b dev
 Switched to a new branch 'dev'
-PS C:\Users\USER\OneDrive\Documents\myProject> git commit -a -m "Adding style"
-[dev a62e5c1] Adding style
- 1 file changed, 11 insertions(+), 2 deletions(-)
-PS C:\Users\USER\OneDrive\Documents\myProject> git checkout -b test
+PS C:\Users\USER\OneDrive\Documents\project> git commit -a -m "Adding Style"
+On branch dev
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        check.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\USER\OneDrive\Documents\project> git add .
+PS C:\Users\USER\OneDrive\Documents\project> git commit -m "Add new File"
+[dev 2f3a46c] Add new File
+ 1 file changed, 9 insertions(+)
+ create mode 100644 check.html
+PS C:\Users\USER\OneDrive\Documents\project> git checkout -b test
 Switched to a new branch 'test'
-PS C:\Users\USER\OneDrive\Documents\myProject> git checkout dev
+PS C:\Users\USER\OneDrive\Documents\project> git checkout dev
 Switched to branch 'dev'
-PS C:\Users\USER\OneDrive\Documents\myProject> git branch -d test
-Deleted branch test (was a62e5c1).
+PS C:\Users\USER\OneDrive\Documents\project> git branch -d test
+Deleted branch test (was 2f3a46c).
+
 ```
 
 #### Exercises 2
