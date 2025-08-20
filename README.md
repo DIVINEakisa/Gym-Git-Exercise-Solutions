@@ -159,7 +159,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 ```
 
-##### Bundle 2
+## Bundle 2
 
 ### Exercise 1
 
