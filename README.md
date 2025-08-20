@@ -158,3 +158,47 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 
 ```
+
+##### Bundle 2
+
+### Exercise 1
+
+```bash
+git branch
+  dev
+* main
+
+C:\Users\USER\OneDrive\Documents\myProject>git checkout -b ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+
+C:\Users\USER\OneDrive\Documents\myProject>git branch
+  dev
+* ft/bundle-2
+  main
+
+C:\Users\USER\OneDrive\Documents\myProject>git add .
+
+C:\Users\USER\OneDrive\Documents\myProject>git commit -m "New File"
+[ft/bundle-2 57b1370] New File
+ 1 file changed, 11 insertions(+)
+ create mode 100644 service.html
+
+C:\Users\USER\OneDrive\Documents\myProject>git status
+On branch ft/bundle-2
+nothing to commit, working tree clean
+
+C:\Users\USER\OneDrive\Documents\myProject>git push origin ft/bundle-2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 450 bytes | 450.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/DIVINEakisa/Bundle1--Exercises1/pull/new/ft/bundle-2
+remote:
+To https://github.com/DIVINEakisa/Bundle1--Exercises1.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+```
