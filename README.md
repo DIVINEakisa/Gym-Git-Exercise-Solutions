@@ -202,3 +202,110 @@ remote:
 To https://github.com/DIVINEakisa/Bundle1--Exercises1.git
  * [new branch]      ft/bundle-2 -> ft/bundle-2
 ```
+
+### Exercise 2
+
+```bash
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (main)
+$ git pull origin main
+From https://github.com/DIVINEakisa/Bundle1--Exercises1
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (main)
+$ git branch ft/service-redesign
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (main)
+$ git checkout ft/service-redesign
+M       service.html
+Switched to branch 'ft/service-redesign'
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/service-redesign)
+$ git add .
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/service-redesign)
+$ git commit -m "New Changes On Service"
+[ft/service-redesign 853676f] New Changes On Service
+ 2 files changed, 161 insertions(+), 4 deletions(-)
+ create mode 100644 clear
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/service-redesign)
+$ git push origin main
+Everything up-to-date
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/service-redesign|MERGING)
+$ git fetch origin
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/service-redesign|MERGING)
+$ git diff ft/service-redesign
+diff --git a/service.html b/service.html
+index 41d5096..ce91e3a 100644
+--- a/service.html
++++ b/service.html
+@@ -3,7 +3,10 @@
+   <head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++<<<<<<< HEAD
+     <!-- displays site properly based on user's device -->
++=======
++>>>>>>> c57f2b59b53fdd6933db6c100d6ffcc63b0118e4
+
+     <link
+       rel="icon"
+@@ -22,8 +25,13 @@
+       }
+     </style>
+   </head>
++<<<<<<< HEAD
+   <body bg-hsl(248, 70%, 10%)>
+     <!-- Form starts -->
++=======
++
++  <body bg-hsl(248, 70%, 10%)>
++>>>>>>> c57f2b59b53fdd6933db6c100d6ffcc63b0118e4
+     <div class="head">
+       <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+
+@@ -66,6 +74,7 @@
+       /><br />
+     </form>
+
++<<<<<<< HEAD
+     <!-- Form ends -->
+
+     <!-- Generated tickets starts -->
+@@ -78,10 +87,18 @@
+
+     <!-- Generated tickets ends -->
+
++=======
++    Congrats, Your ticket is ready. We've emailed your ticket to and will send
++    updates in the run up to the event. Coding Conf Jan 31, 2025 / Austin, TX
++>>>>>>> c57f2b59b53fdd6933db6c100d6ffcc63b0118e4
+     <div class="attribution">
+       Challenge by
+       <a href=
+
+C:\Users\USER\OneDrive\Documents\myProject>git pull origin main
+From https://github.com/DIVINEakisa/Bundle1--Exercises1
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+C:\Users\USER\OneDrive\Documents\myProject>git merge main
+Already up to date.
+
+C:\Users\USER\OneDrive\Documents\myProject>git commit -m "merge main"
+On branch ft/service-redesign
+nothing to commit, working tree clean
+
+C:\Users\USER\OneDrive\Documents\myProject>git push origin ft/service-redesign
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 1.90 KiB | 1.90 MiB/s, done.
+Total 7 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To https://github.com/DIVINEakisa/Bundle1--Exercises1.git
+   c57f2b5..4c185de  ft/service-redesign -> ft/service-redesign
+```
