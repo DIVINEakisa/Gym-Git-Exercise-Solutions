@@ -308,4 +308,17 @@ Total 7 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
 remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
 To https://github.com/DIVINEakisa/Bundle1--Exercises1.git
    c57f2b5..4c185de  ft/service-redesign -> ft/service-redesign
+   PS C:\Users\USER\OneDrive\Documents\Gym-Git-Exercise-Solutions> git commit -m "Add Exercise 2 Bundle 2"
+[main e514bcd] Add Exercise 2 Bundle 2
+ 1 file changed, 107 insertions(+)
+PS C:\Users\USER\OneDrive\Documents\Gym-Git-Exercise-Solutions> git push origin main
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 1.64 KiB | 1.64 MiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/DIVINEakisa/Gym-Git-Exercise-Solutions.git
+   8f5d1fa..e514bcd  main -> main
 ```
