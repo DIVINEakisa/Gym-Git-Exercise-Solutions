@@ -322,3 +322,224 @@ remote: Resolving deltas: 100% (2/2), completed with 1 local object.
 To https://github.com/DIVINEakisa/Gym-Git-Exercise-Solutions.git
    8f5d1fa..e514bcd  main -> main
 ```
+
+## Bundle 3
+
+### Exercise 1
+
+```bash
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents
+$ cd myProject
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/service-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is behind 'origin/main' by 5 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (main)
+$ git pull origin
+Updating 929f6b5..2d457d0
+Fast-forward
+ clear        | 82 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ service.html | 72 +++++++++++++++++++++++++++++++++++++++++++++++++---
+ 2 files changed, 150 insertions(+), 4 deletions(-)
+ create mode 100644 clear
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (main)
+$ git checkout -b ft/team-page
+Switched to a new branch 'ft/team-page'
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/team-page)
+$ git add .
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/team-page)
+$ git commit -m "Create new file callde team.html"
+[ft/team-page 71d54b4] Create new file callde team.html
+ 1 file changed, 537 insertions(+)
+ create mode 100644 team.html
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/team-page)
+$ git push origin ft/team-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 4.48 KiB | 4.48 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:      https://github.com/DIVINEakisa/Bundle1--Exercises1/pull/new/ft/team-page
+remote:
+To https://github.com/DIVINEakisa/Bundle1--Exercises1.git
+ * [new branch]      ft/team-page -> ft/team-page
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/team-page)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (main)
+$ git checkout -b ft/contact-page
+Switched to a new branch 'ft/contact-page'
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/contact-page)
+$ git checkout ft/team-page
+Switched to branch 'ft/team-page'
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/team-page)
+$ git log -1 --pretty=format:"%h"
+71d54b4
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/team-page)
+$ git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/contact-page)
+$ git cherry-pick 71d54b4
+[ft/contact-page a97781c] Create new file callde team.html
+ Date: Thu Aug 21 12:07:52 2025 +0200
+ 1 file changed, 537 insertions(+)
+ create mode 100644 team.html
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/contact-page)
+$ git status
+On branch ft/contact-page
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   team.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/contact-page)
+$ git add .
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/contact-page)
+$ git commit -m "Add Copy Right On The Footer"
+[ft/contact-page f2c584e] Add Copy Right On The Footer
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/contact-page)
+$ git push origin ft/contact-page
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 4.75 KiB | 4.75 MiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/DIVINEakisa/Bundle1--Exercises1/pull/new/ft/contact-page
+remote:
+To https://github.com/DIVINEakisa/Bundle1--Exercises1.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/contact-page)
+$ git checkout -b ft/faq-page
+Switched to a new branch 'ft/faq-page'
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/faq-page)
+$ git commit -a -m "Add Faq.html File"
+On branch ft/faq-page
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        faq.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/faq-page)
+$ git add .
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/faq-page)
+$ git status
+On branch ft/faq-page
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   faq.html
+
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/faq-page)
+$ git push origin ft/faq-page
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/DIVINEakisa/Bundle1--Exercises1/pull/new/ft/faq-page
+remote:
+To https://github.com/DIVINEakisa/Bundle1--Exercises1.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/faq-page)
+$ git reverte 71d54b4
+git: 'reverte' is not a git command. See 'git --help'.
+
+The most similar command is
+        revert
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/faq-page)
+$ git revert 71d54b4
+error: your local changes would be overwritten by revert.
+hint: commit your changes or stash them to proceed.
+fatal: revert failed
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/faq-page)
+$ ^C
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/faq-page)
+$ git status
+On branch ft/faq-page
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   faq.html
+
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/faq-page)
+$ git stash
+Saved working directory and index state WIP on ft/faq-page: f2c584e Add Copy Right On The Footer
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/faq-page)
+$ git revert 71d54b4
+CONFLICT (modify/delete): team.html deleted in parent of 71d54b4 (Create new file callde team.html) and modified in HEAD.  Version HEAD of team.html left in tree.
+error: could not revert 71d54b4... Create new file callde team.html
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git revert --continue".
+hint: You can instead skip this commit with "git revert --skip".
+hint: To abort and get back to the state before "git revert",
+hint: run "git revert --abort".
+hint: Disable this message with "git config set advice.mergeConflict false"
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/faq-page|REVERTING)
+$ git diff
+* Unmerged path team.html
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/faq-page|REVERTING)
+$ git add .
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/faq-page|REVERTING)
+$ git revert --continue
+On branch ft/faq-page
+You are currently reverting commit 71d54b4.
+  (all conflicts fixed: run "git revert --continue")
+  (use "git revert --skip" to skip this patch)
+  (use "git revert --abort" to cancel the revert operation)
+
+nothing to commit, working tree clean
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/faq-page|REVERTING)
+$ git revert --abort
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/faq-page)
+$ git push origin ft/faq-page
+Everything up-to-date
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/faq-page)
+$ git status
+On branch ft/faq-page
+nothing to commit, working tree clean
+
+
+```
