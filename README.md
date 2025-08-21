@@ -543,3 +543,106 @@ nothing to commit, working tree clean
 
 
 ```
+
+### Exxercise2
+
+```bash
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/faq-page)
+$ git branch
+  dev
+  ft/bundle-2
+  ft/contact-page
+* ft/faq-page
+  ft/service-redesign
+  ft/team-page
+  main
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/faq-page)
+$ git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/home-page-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (main)
+$ git add .
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (main)
+$ git commit -m "Add Paragraph in "
+[main 67718a2] Add Paragraph in
+ 1 file changed, 1 insertion(+)
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 352 bytes | 352.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/DIVINEakisa/Bundle--Exercises.git
+To https://github.com/DIVINEakisa/Bundle1--Exercises1.git
+   2d457d0..67718a2  main -> main
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (main)
+$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/home-page-redesign)
+$ git rebase main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/home-page-redesign)
+$ git status
+On branch ft/home-page-redesign
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   home.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/home-page-redesign)
+$ git add .
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/home-page-redesign)
+$ git commit -m "Add Heading And Edit Title"
+[ft/home-page-redesign 96fef4f] Add Heading And Edit Title
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/home-page-redesign)
+$ git push origin ft/home-page-redesign
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 5.08 KiB | 2.54 MiB/s, done.
+Total 9 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (5/5), completed with 2 local objects.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/DIVINEakisa/Bundle--Exercises.git
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting
+remote:      https://github.com/DIVINEakisa/Bundle--Exercises/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/DIVINEakisa/Bundle1--Exercises1.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+
+```
