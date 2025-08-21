@@ -722,3 +722,104 @@ To https://github.com/DIVINEakisa/git-copy.git
    8b8d609..a963ed5  main -> main
 
 ```
+
+### Exercise 2
+
+```bash
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (main)
+$ git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/footer)
+$ git add .
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/footer)
+$ git commit -m "Add a new File"
+[ft/footer 072567c] Add a new File
+ 1 file changed, 11 insertions(+)
+ create mode 100644 footer.html
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/footer)
+$ git push origin ft/footer
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 443 bytes | 443.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/DIVINEakisa/Bundle--Exercises.git
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/DIVINEakisa/Bundle--Exercises/pull/new/ft/foote
+remote:
+To https://github.com/DIVINEakisa/Bundle1--Exercises1.git
+ * [new branch]      ft/footer -> ft/footer
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/footer)
+$ git add .
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/footer)
+$ git commit -m "Add Some change"
+[ft/footer 55825c8] Add Some change
+ 1 file changed, 6 insertions(+)
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/footer)
+$ git push origin ft/footer
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 534 bytes | 267.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/DIVINEakisa/Bundle--Exercises.git
+To https://github.com/DIVINEakisa/Bundle1--Exercises1.git
+   072567c..55825c8  ft/footer -> ft/footer
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/footer)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (main)
+$ git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/squashing)
+$ git merge --squash ft/footer
+Updating a963ed5..55825c8
+Fast-forward
+Squash commit -- not updating HEAD
+ footer.html | 17 +++++++++++++++++
+ 1 file changed, 17 insertions(+)
+ create mode 100644 footer.html
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/squashing)
+$ git commit -m "footer changes squashing"
+[ft/squashing 8bda6c7] footer changes squashing
+ 1 file changed, 17 insertions(+)
+ create mode 100644 footer.html
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/myProject (ft/squashing)
+$ git push origin ft/squashing
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 552 bytes | 276.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/DIVINEakisa/Bundle--Exercises.git
+remote:
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/DIVINEakisa/Bundle--Exercises/pull/new/ft/squashing
+remote:
+To https://github.com/DIVINEakisa/Bundle1--Exercises1.git
+ * [new branch]      ft/squashing -> ft/squashing
+
+```
