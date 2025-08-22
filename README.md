@@ -921,3 +921,41 @@ To https://github.com/DIVINEakisa/git-cafe-exercise.git
  * [new branch]      ft/menu -> ft/menu
 
 ```
+
+### Exercise 2
+
+```bash
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/git-cafe-exercise (ft/menu)
+$ git checkout -b ft/bug-fix
+Switched to a new branch 'ft/bug-fix'
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/git-cafe-exercise (ft/bug-fix)
+$ git add index-4.html
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/git-cafe-exercise (ft/bug-fix)
+$ git commit -m "Edit The Title of index-4.html"
+[ft/bug-fix ae170a2] Edit The Title of index-4.html
+ 1 file changed, 232 insertions(+), 164 deletions(-)
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/git-cafe-exercise (ft/bug-fix)
+$ git push origin main
+Everything up-to-date
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/git-cafe-exercise (ft/bug-fix)
+$ git push origin ft/bug-fix
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.43 KiB | 732.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/bug-fix' on GitHub by visiting:
+remote:      https://github.com/DIVINEakisa/git-cafe-exercise/pull/new/ft/bug-fix
+remote:
+To https://github.com/DIVINEakisa/git-cafe-exercise.git
+ * [new branch]      ft/bug-fix -> ft/bug-fix
+
+
+```
