@@ -959,3 +959,48 @@ To https://github.com/DIVINEakisa/git-cafe-exercise.git
 
 
 ```
+
+### Exercise 3
+
+```bash
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/git-cafe-exercise (ft/bug-fix)
+$ git checkout -b bg/contact-tel
+Switched to a new branch 'bg/contact-tel'
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/git-cafe-exercise (bg/contact-tel)
+$ git status
+On branch bg/contact-tel
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index-4.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/git-cafe-exercise (bg/contact-tel)
+$ git add .
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/git-cafe-exercise (bg/contact-tel)
+$ git commit -m "Edit Telephone"
+[bg/contact-tel 6414143] Edit Telephone
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+USER@LAPTOP-8BO5UTNO MINGW64 ~/OneDrive/Documents/git-cafe-exercise (bg/contact-tel)
+$ git push --set-upstream origin bg/contact-tel
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 303 bytes | 303.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'bg/contact-tel' on GitHub by visiting:
+remote:      https://github.com/DIVINEakisa/git-cafe-exercise/pull/new/bg/contact-tel
+remote:
+To https://github.com/DIVINEakisa/git-cafe-exercise.git
+ * [new branch]      bg/contact-tel -> bg/contact-tel
+branch 'bg/contact-tel' set up to track 'origin/bg/contact-tel'.
+
+
+```
